@@ -3,6 +3,7 @@
   --primary-color: #000000; /* primary */
   --secondary-gradient: linear-gradient(135deg, #000000 0%, #3a1c71 100%); /* secondary gradient */
   --accent-color: #ffb347; /* accent */
+  --accent-gradient: linear-gradient(90deg, #ffb347 0%, #ffd885 80%);
 
   /* Backgrounds and text */
   --background-main: #ffffff;
@@ -17,8 +18,8 @@
   --shadow-color: rgba(58, 28, 113, 0.07);
 
   /* Extras for theming flexibility */
-  --button-background: var(--accent-color);
-  --button-hover-background: #ffd885;
+  --button-background: var(--accent-gradient);
+  --button-hover-background: linear-gradient(90deg, #ffd885 25%, #ffb347 100%);
   --button-text: #000000;
 }
 
