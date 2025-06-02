@@ -1,15 +1,38 @@
 :root {
-  --base-light: #00ffff;
-  --base-dark: #00008b;
-  --text-color: #ffffff;
-  --text-secondary: rgba(255, 255, 255, 0.7);
-  --border-color: rgba(255, 255, 255, 0.1);
+  /* ColorCraft light theme palette (strong dark contrast) */
+  --primary-color: #000000; /* primary */
+  --secondary-gradient: linear-gradient(135deg, #000000 0%, #3a1c71 100%); /* secondary gradient */
+  --accent-color: #ffb347; /* accent */
+
+  /* Backgrounds and text */
+  --background-main: #ffffff;
+  --background-contrast: #ebecf0;
+  --navbar-background: #000000;
+  --card-background: #faf9f6;
+
+  --text-color: #000000;
+  --text-secondary: #3a1c71;
+  --text-on-dark: #ffffff;
+  --border-color: rgba(0,0,0,0.09);
+  --shadow-color: rgba(58, 28, 113, 0.07);
+
+  /* Extras for theming flexibility */
+  --button-background: var(--accent-color);
+  --button-hover-background: #ffd885;
+  --button-text: #000000;
 }
+
+/* Deprecated old variables for backward compatibility */
+:root {
+  --base-light: #ffb347;
+  --base-dark: #000000;
+}
+
 
 body {
   margin: 0;
   font-family: 'Inter', 'Roboto', 'Helvetica', 'Arial', sans-serif;
-  background-color: var(--base-dark);
+  background-color: var(--background-main);
   color: var(--text-color);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
