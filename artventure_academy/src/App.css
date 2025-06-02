@@ -285,24 +285,33 @@ body {
 .btn {
   background: var(--button-background);
   color: var(--button-text);
-  border: none;
-  border-radius: 6px;
-  padding: 10px 20px;
-  font-size: 1rem;
-  font-weight: 600;
-  box-shadow: 0 1.5px 8px 0 var(--shadow-color);
+  border: 2.5px solid var(--accent-color);
+  border-radius: 28px;
+  padding: 13px 32px;
+  font-size: 1.14rem;
+  font-weight: 700;
+  box-shadow: 0 2.5px 12px 0 var(--shadow-color);
   cursor: pointer;
-  transition: background 0.2s, color 0.2s, box-shadow 0.25s;
+  letter-spacing: 0.03em;
+  transition: 
+    background 0.22s cubic-bezier(.23,1.05,.32,1), 
+    color 0.2s, 
+    box-shadow 0.29s, 
+    border-color 0.18s;
+  display: inline-block;
 }
 .btn:hover, .btn:focus {
   background: var(--button-hover-background);
   color: var(--primary-color);
-  box-shadow: 0 3px 12px 0 var(--shadow-color);
+  border-color: #ffd885;
+  box-shadow: 0 5px 22px 0 var(--shadow-color);
   outline: none;
 }
 .btn-large {
-  padding: 12px 28px;
-  font-size: 1.13rem;
+  padding: 16px 40px;
+  font-size: 1.21rem;
+  border-radius: 33px;
+  box-shadow: 0 6px 18px 0 var(--shadow-color);
 }
 
 /* Scrollbar light styling for main content */
