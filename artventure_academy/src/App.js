@@ -6,6 +6,7 @@ import Lessons from "./pages/Lessons";
 import Gallery from "./pages/Gallery";
 import Challenges from "./pages/Challenges";
 import Profile from "./pages/Profile";
+import Sidebar from "./Sidebar";
 
 // PUBLIC_INTERFACE
 function App() {
@@ -62,10 +63,8 @@ function App() {
             </Routes>
           </main>
 
-          {/* Optional Right Sidebar Placeholder */}
-          <aside className="sidebar sidebar--right">
-            {/* Reserved for user info, notifications, or extra resources */}
-          </aside>
+          {/* Right Sidebar: User info/profile placeholder for ColorCraft */}
+          <Sidebar />
         </div>
       </div>
     </Router>
