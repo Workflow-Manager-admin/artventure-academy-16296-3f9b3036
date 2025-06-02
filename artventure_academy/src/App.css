@@ -76,6 +76,7 @@ body {
   padding: 0 24px;
   width: 100%;
   box-sizing: border-box;
+  background: var(--background-main);
 }
 
 .hero {
@@ -86,19 +87,25 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 24px;
+  background: var(--card-background);
+  border-radius: 24px;
+  box-shadow: 0 4px 32px 0 var(--shadow-color), 0 1.5px 0 var(--border-color);
 }
 
 .subtitle {
-  color: var(--base-light);
-  font-weight: 500;
+  color: var(--accent-color);
+  font-weight: 600;
   font-size: 1.1rem;
+  letter-spacing: 0.04em;
 }
 
 .title {
   font-size: 3.5rem;
-  font-weight: 600;
-  line-height: 1.2;
+  font-weight: 700;
+  line-height: 1.17;
   margin: 0;
+  color: var(--primary-color);
+  text-shadow: 0 2px 16px #e7defd33;
 }
 
 .description {
