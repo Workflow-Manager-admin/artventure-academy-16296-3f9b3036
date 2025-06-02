@@ -45,12 +45,12 @@ body {
 }
 
 .navbar {
-  background-color: var(--base-dark);
+  background: var(--secondary-gradient);
   padding: 16px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  border-bottom: 1px solid var(--border-color);
+  border-bottom: 1.5px solid var(--border-color);
   position: fixed;
   top: 0;
   width: 100%;
@@ -67,7 +67,7 @@ body {
 }
 
 .logo-symbol {
-  color: var(--base-light);
+  color: var(--accent-color);
 }
 
 .container {
