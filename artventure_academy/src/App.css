@@ -117,22 +117,26 @@ body {
 }
 
 .btn {
-  background-color: var(--base-light);
-  color: white;
+  background: var(--button-background);
+  color: var(--button-text);
   border: none;
-  border-radius: 4px;
+  border-radius: 6px;
   padding: 10px 20px;
   font-size: 1rem;
-  font-weight: 500;
+  font-weight: 600;
+  box-shadow: 0 1.5px 8px 0 var(--shadow-color);
   cursor: pointer;
-  transition: background-color 0.2s ease;
+  transition: background 0.2s, color 0.2s, box-shadow 0.25s;
 }
-
-.btn:hover {
-  background-color: #7691ff;
+.btn:hover, .btn:focus {
+  background: var(--button-hover-background);
+  color: var(--primary-color);
+  box-shadow: 0 3px 12px 0 var(--shadow-color);
+  outline: none;
 }
 
 .btn-large {
-  padding: 12px 24px;
-  font-size: 1.1rem;
+  padding: 12px 28px;
+  font-size: 1.13rem;
 }
+
